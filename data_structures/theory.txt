@@ -1,0 +1,21 @@
+Теория:
+
+Понимание структур Stack, Queue, Deque, List, Hash table - Готово
+
+Алгоритмы сортировки: пузырек, вставками - Готово
+
+Алгоритм поиска Линейный и бинарный | Готово | Линейный - O(n) | Бинарный - O(log n)
+
+Big O notation: сложность операции чтение/запись n-ного элемента из
+структур Stack, Queue, Deque, List, Hash table - Готово | Stack, Queue, Deque - O(n) | List, Hash table - O(1)
+
+Понимание типов данных: Str, Byte, Bytearray, int, float, Boolean, Dict, List, Tuple, Set - Готово
+
+Big O для операций чтение/запись для Dict, List, Tuple, Set - Готово | O(1)
+
+Dict/List/Set comprehension - Готово
+
+Изменяемые/неизменяемые типы данных - Готово | изменяемые - List, Set, Dict, Bytearray
+                                             | неизменяемые - Str, Byte, int, float, Boolean, Tuple
+
+Хэшируемые типы данных - Готово | Все неизменяемые
