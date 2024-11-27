@@ -10,7 +10,7 @@ def randomizer():
         count = input('count = ')
         try:
             count = int(count)
-        except:
+        except ValueError:
             print('Количество должно быть целым числом!')
             logging.error('The quantity is not an integer')
         else:
@@ -20,7 +20,7 @@ def randomizer():
                 try:
                     a = int(a)
                     b = int(b)
-                except:
+                except ValueError:
                     print('a и b должны быть числами')
                     logging.error('a and b is not numbers')
                 else:
@@ -29,7 +29,7 @@ def randomizer():
                             number = randint(a, b)
                             numbers.append(number)
                         print(f'Случайные числа: {numbers}')
-                        logging.info(f'Random numbers: {numbers}')
+                        logging.info('Random numbers: %s', numbers)
                         break
                     else:
                         print('a должно быть больше b')

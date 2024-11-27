@@ -2,7 +2,7 @@ def main():
     d = {'website': 'google', 'url': 'google.ru'}
     try:
         data = d['url']
-    except:
+    except KeyError:
         data = 'https://'
     else:
         data = data.upper()

@@ -16,4 +16,4 @@ try:
     print(find_average(numbers))
 except:
     print('Введите список чисел')
-    logging.error('A list of non-numbers has been entered')
+    logging.error('A list of non-numbers has been entered', exc_info=True)
