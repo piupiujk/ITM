@@ -1,4 +1,5 @@
 file = open('lorum.txt', 'w+', encoding='utf-8')
-print(file.read())
 file.write('fffffff')
+file.seek(0)
+print(file.read())
 file.close()
