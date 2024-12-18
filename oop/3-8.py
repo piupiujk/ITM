@@ -36,9 +36,24 @@ class Car(MeansOfTransport):
     def get_drivers(cls):
         return cls.car_drive
 
+    def __del__(self):
+        print('Данные удалены')
+
+    def __str__(self):
+        return 'Экземпляр класса Car'
+
+    def __getattr__(self, item):
+        return 'Данного атрибута не существует'
+
+    def __setattr__(self, key, value):
+        self.__dict__[key] = value
+        print(f'Присвоение атрибуту {key} значение {value}')
+
 
 car1 = Car('audi', 'black', 3)
 print(car1.get_drivers())
+print(car1)
+print(car1.name)
 
 
 class Moped(MeansOfTransport):
@@ -51,6 +66,5 @@ class Moped(MeansOfTransport):
     def get_time(distance, max_speed):
         return f'Время: {(distance / max_speed) * 60} минут'
 
-
-moped1 = Moped('audi', 'black', 3)
-print(moped1.get_time(10, 100))
+# moped1 = Moped('audi', 'black', 3)
+# print(moped1.get_time(10, 100))
