@@ -66,5 +66,5 @@ class Moped(MeansOfTransport):
     def get_time(distance, max_speed):
         return f'Время: {(distance / max_speed) * 60} минут'
 
-# moped1 = Moped('audi', 'black', 3)
-# print(moped1.get_time(10, 100))
+moped1 = Moped('audi', 'black', 3)
+print(moped1.get_time(10, 100))
