@@ -1,6 +1,23 @@
-class SomePeoples:
-    def __init__(self):
-        self.peoples = []
+from abc import ABC, abstractmethod
+
+
+class Adder(ABC):
+    @abstractmethod
+    def add_people(self, people):
+        pass
+
+    @abstractmethod
+    def __iter__(self):
+        pass
+
+    @abstractmethod
+    def __next__(self):
+        pass
+
+
+class SomePeoples(Adder):
+    def __init__(self, peoples):
+        self.peoples = peoples
 
     def add_people(self, people):
         self.peoples.append(people)
@@ -16,7 +33,8 @@ class SomePeoples:
             self.peoples = self.peoples[1:]
             return value
 
-peoples = SomePeoples()
+
+peoples = SomePeoples(['Саша'])
 
 peoples.add_people('Вася')
 peoples.add_people('Коля')

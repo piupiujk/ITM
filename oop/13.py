@@ -46,6 +46,7 @@ class Dog:
     def __del__(self):
         Dog.__instance = None
 
+
 dog1 = Dog('гав', 'овчарка')
 print(id(dog1))
 dog1.make_voice()

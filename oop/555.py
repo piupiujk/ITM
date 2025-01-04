@@ -6,4 +6,5 @@ class NewCls:
     def __init__(self):
         print('Вызов init')
 
+
 nc = NewCls()

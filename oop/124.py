@@ -10,6 +10,7 @@ class Transport:
     def get_brand(self):
         return self.__brand
 
+
 car = Transport('BMW', 'Germany', 'black')
 print(car.get_brand())
 car.set_brand('Mercedes')
